@@ -2,7 +2,7 @@
 
 static char vet[5002][20];
 static char ver[5002];
-char vetbin[40016];
+int vetbin[40016];
 
 // na tabela ascii 39 == '
 
@@ -77,7 +77,7 @@ int main() {
     populaV();
     copia_vetor(0);
     Converter_binario a;
-    a.recebe(ver);
+    a.recebe(ver,vetbin);
     //imprime();
     return 0;
 }

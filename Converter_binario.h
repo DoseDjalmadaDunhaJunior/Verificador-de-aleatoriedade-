@@ -10,10 +10,15 @@ using namespace std;
 class Converter_binario {
 public:
 
-    void recebe(char* vetor) {
+    void recebe(char* vetor, int* vet) {
         populadecimal(vetor);
         convertebinario(vetor);
+
+        for (int i = 0; i < 40016; i++) {
+            vet[i] = vetbin[i];
+        }
     }
+
 
 private:
     // a função abaixo converte o vetor char num correspondente ao caractere na tabela acii
@@ -89,15 +94,8 @@ private:
             bin[8] = 0;
         }
 
-        /**
-        for (int i = 0; i < 9; i++) {
-            printf("%i", bin[i]);
-        }
-        puts("");
-         **/
     }
 
-    //000110000
     //ele esta andando corretamente para transformar os numeros em binario e salva no vetor vetbin
     void convertebinario(char* vetor) {
         int bin[9];
