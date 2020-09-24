@@ -1,4 +1,6 @@
 #include "Converter_binario.h"
+#include "Monobit.h"
+#include "LongTest.h"
 
 static char vet[5002][20];
 static char ver[5002];
@@ -72,12 +74,16 @@ void imprime(){
         cout<<ver<<endl;
 }
 
+// quando retorna 1 quer dizer que esta certo
 int main() {
     //teste();
     populaV();
     copia_vetor(0);
     Converter_binario a;
     a.recebe(ver,vetbin);
-    //imprime();
+    Monobit b;
+    cout<<b.teste(vetbin)<<endl;
+    LongTest t;
+    cout<<t.longo(vetbin)<<endl;
     return 0;
 }

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/chave_cpp.dir/main.cpp.o  -o chave_cpp 
+/usr/bin/c++  -g   CMakeFiles/chave_cpp.dir/main.cpp.o CMakeFiles/chave_cpp.dir/Monobit.cpp.o CMakeFiles/chave_cpp.dir/LongTest.cpp.o  -o chave_cpp 

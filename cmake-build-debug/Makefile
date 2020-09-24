@@ -143,6 +143,60 @@ chave_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/build
 .PHONY : chave_cpp/fast
 
+LongTest.o: LongTest.cpp.o
+
+.PHONY : LongTest.o
+
+# target to build an object file
+LongTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/LongTest.cpp.o
+.PHONY : LongTest.cpp.o
+
+LongTest.i: LongTest.cpp.i
+
+.PHONY : LongTest.i
+
+# target to preprocess a source file
+LongTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/LongTest.cpp.i
+.PHONY : LongTest.cpp.i
+
+LongTest.s: LongTest.cpp.s
+
+.PHONY : LongTest.s
+
+# target to generate assembly for a file
+LongTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/LongTest.cpp.s
+.PHONY : LongTest.cpp.s
+
+Monobit.o: Monobit.cpp.o
+
+.PHONY : Monobit.o
+
+# target to build an object file
+Monobit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/Monobit.cpp.o
+.PHONY : Monobit.cpp.o
+
+Monobit.i: Monobit.cpp.i
+
+.PHONY : Monobit.i
+
+# target to preprocess a source file
+Monobit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/Monobit.cpp.i
+.PHONY : Monobit.cpp.i
+
+Monobit.s: Monobit.cpp.s
+
+.PHONY : Monobit.s
+
+# target to generate assembly for a file
+Monobit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/Monobit.cpp.s
+.PHONY : Monobit.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... chave_cpp"
+	@echo "... LongTest.o"
+	@echo "... LongTest.i"
+	@echo "... LongTest.s"
+	@echo "... Monobit.o"
+	@echo "... Monobit.i"
+	@echo "... Monobit.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
