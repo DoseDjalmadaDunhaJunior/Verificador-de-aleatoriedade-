@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/chave_cpp.dir/main.cpp.o  -o chave_cpp 
