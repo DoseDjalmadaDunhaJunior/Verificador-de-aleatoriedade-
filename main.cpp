@@ -57,18 +57,36 @@ int main() {
     populaV();
 
     for (int i = 0; i < 20; i++) {
-        cout<<"teste para a linha: "<<i<<endl;
+        cout << "teste para a linha: " << i << endl;
         copia_vetor(i);
         Converter_binario a;
         a.recebe(ver, vetbin);
         Monobit b;
-        cout << "Monobittest: " << b.teste(vetbin) << endl;
+        if (b.teste(vetbin) == 1) {
+            cout << "Monobittest: aprovado" << endl;
+        } else {
+            cout << "Monobittest: reprovado" << endl;
+        }
         LongTest t;
-        cout << "Longtest: " << t.longo(vetbin) << endl;
+        if (t.longo(vetbin) == 1) {
+            cout << "Longtest: aprovado" << endl;
+        } else {
+            cout << "Longtest: reprovado" << endl;
+
+        }
         PokerTest c;
-        cout << "pokertest: " << c.poker(vetbin) << endl;
+        if (c.poker(vetbin) == 1) {
+            cout << "pokertest: aprovado" << endl;
+        } else {
+            cout << "pokertest: reprovado" << endl;
+        }
         RunTest d;
-        cout << "RunTest: " << d.run(vetbin) << endl;
-         }
+        if (d.run(vetbin) == 1) {
+            cout << "RunTest: aprovado" << endl;
+        } else {
+            cout << "RunTest: reprovado" << endl;
+        }
+puts("");
+    }
     return 0;
 }
