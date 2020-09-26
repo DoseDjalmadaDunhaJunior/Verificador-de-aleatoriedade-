@@ -43,6 +43,7 @@ private:
         }
     }
 
+    //ele conta a quantidade de 1 dos conjuntos de 4 bites e coloca o resultado num vetor
     void contaUm(int po){
         int c = 0;
         for (int i = 0; i < 4; i++) {
@@ -53,21 +54,7 @@ private:
         contUm[po] = c;
     }
 
-    void teste(){
-        int c = 0;
-        for (int i = 0; i < 55; i++) {
-            if(contUm[i] == 0){
-                c++;
-            }
-            if(c >= 5){
-                cout<<"================"<<i<<"================="<<endl;
-            }
-            else{
-                cout<<contUm[i]<<endl;
-            }
-        }
-    }
-
+    // aqui ele conta se ha alguma repetição
     int contaRepeticao(){
         int c = 0;
         for (int i = 0; i < 60; i++) {

@@ -224,6 +224,33 @@ PokerTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/PokerTest.cpp.s
 .PHONY : PokerTest.cpp.s
 
+RunTest.o: RunTest.cpp.o
+
+.PHONY : RunTest.o
+
+# target to build an object file
+RunTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/RunTest.cpp.o
+.PHONY : RunTest.cpp.o
+
+RunTest.i: RunTest.cpp.i
+
+.PHONY : RunTest.i
+
+# target to preprocess a source file
+RunTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/RunTest.cpp.i
+.PHONY : RunTest.cpp.i
+
+RunTest.s: RunTest.cpp.s
+
+.PHONY : RunTest.s
+
+# target to generate assembly for a file
+RunTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/RunTest.cpp.s
+.PHONY : RunTest.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -269,6 +296,9 @@ help:
 	@echo "... PokerTest.o"
 	@echo "... PokerTest.i"
 	@echo "... PokerTest.s"
+	@echo "... RunTest.o"
+	@echo "... RunTest.i"
+	@echo "... RunTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

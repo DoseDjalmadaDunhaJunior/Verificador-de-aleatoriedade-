@@ -2,6 +2,8 @@
 #include "Monobit.h"
 #include "LongTest.h"
 #include "PokerTest.h"
+#include "RunTest.h"
+
 
 static char vet[5002][20];
 static char ver[5002];
@@ -49,30 +51,6 @@ void populaV(){
             }
     }
     fclose(arq);
-}
-
-void teste(){
-    FILE *arq;
-    int c = 0; // é um contador para saber quantas aspas ja foram
-    arq = fopen("Chaves de Criptografia.txt", "r");
-    int i = 0, j = 0;
-    for (i = 0; (i < 5002) ; i++) {
-        fscanf(arq, "%c", &ver[i]);
-        //cout<<ver[i]<<endl;
-    }
-    fclose(arq);
-}
-
-void escreve(){
-    FILE *arq;
-    arq = fopen("Chaves.txt", "w");
-    fprintf(arq,"oi");
-    fclose(arq);
-}
-
-void imprime(){
-        //cout<<vet[0]<<endl;
-        cout<<ver<<endl;
 }
 
 // quando retorna 1 quer dizer que esta certo
