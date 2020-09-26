@@ -94,6 +94,12 @@
 		<Unit filename="/media/jose/09BBDA931A86D9AA/paradas_de_algoritmo/Oitavo_Ultimo_Semestre/Segurança/chave/chave_cpp/Monobit.h">
 			<Option target="chave_cpp"/>
 		</Unit>
+		<Unit filename="/media/jose/09BBDA931A86D9AA/paradas_de_algoritmo/Oitavo_Ultimo_Semestre/Segurança/chave/chave_cpp/PokerTest.cpp">
+			<Option target="chave_cpp"/>
+		</Unit>
+		<Unit filename="/media/jose/09BBDA931A86D9AA/paradas_de_algoritmo/Oitavo_Ultimo_Semestre/Segurança/chave/chave_cpp/PokerTest.h">
+			<Option target="chave_cpp"/>
+		</Unit>
 		<Unit filename="/media/jose/09BBDA931A86D9AA/paradas_de_algoritmo/Oitavo_Ultimo_Semestre/Segurança/chave/chave_cpp/main.cpp">
 			<Option target="chave_cpp"/>
 		</Unit>

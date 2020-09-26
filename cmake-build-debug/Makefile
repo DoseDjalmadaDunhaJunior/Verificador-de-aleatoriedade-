@@ -197,6 +197,33 @@ Monobit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/Monobit.cpp.s
 .PHONY : Monobit.cpp.s
 
+PokerTest.o: PokerTest.cpp.o
+
+.PHONY : PokerTest.o
+
+# target to build an object file
+PokerTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/PokerTest.cpp.o
+.PHONY : PokerTest.cpp.o
+
+PokerTest.i: PokerTest.cpp.i
+
+.PHONY : PokerTest.i
+
+# target to preprocess a source file
+PokerTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/PokerTest.cpp.i
+.PHONY : PokerTest.cpp.i
+
+PokerTest.s: PokerTest.cpp.s
+
+.PHONY : PokerTest.s
+
+# target to generate assembly for a file
+PokerTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chave_cpp.dir/build.make CMakeFiles/chave_cpp.dir/PokerTest.cpp.s
+.PHONY : PokerTest.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -239,6 +266,9 @@ help:
 	@echo "... Monobit.o"
 	@echo "... Monobit.i"
 	@echo "... Monobit.s"
+	@echo "... PokerTest.o"
+	@echo "... PokerTest.i"
+	@echo "... PokerTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

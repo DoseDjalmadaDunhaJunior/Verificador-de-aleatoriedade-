@@ -1,6 +1,7 @@
 #include "Converter_binario.h"
 #include "Monobit.h"
 #include "LongTest.h"
+#include "PokerTest.h"
 
 static char vet[5002][20];
 static char ver[5002];
@@ -82,8 +83,10 @@ int main() {
     Converter_binario a;
     a.recebe(ver,vetbin);
     Monobit b;
-    cout<<b.teste(vetbin)<<endl;
+    cout<<"Monobittest: "<<b.teste(vetbin)<<endl;
     LongTest t;
-    cout<<t.longo(vetbin)<<endl;
+    cout<<"Longtest: "<<t.longo(vetbin)<<endl;
+    PokerTest c;
+    cout<<"pokertest: "<<c.poker(vetbin)<<endl;
     return 0;
 }
