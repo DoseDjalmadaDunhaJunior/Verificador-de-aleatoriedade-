@@ -57,8 +57,8 @@ private:
     // aqui ele conta se ha alguma repetição
     int contaRepeticao(){
         int c = 0;
-        for (int i = 0; i < 60; i++) {
-            for (int j = 0; j < 60; j++) {
+        for (int i = 0; i < 5000; i++) {
+            for (int j = 0; j < 5000; j++) {
                 if(contUm[i] == contUm[j]){
                     c++;
                 }
@@ -71,7 +71,6 @@ private:
         return 1;
     }
 
-    int um = 0;
     int contUm[5000];
     int vetbit[40016];
     int minivet[5];

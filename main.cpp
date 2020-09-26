@@ -15,7 +15,6 @@ int vetbin[40016];
  * se os calculos estão ok
  */
 void copia_vetor(int n){
-    int c = 0; // contador
     for (int i = 0; (i < 5002)  ; i++) {
         ver[i] = vet[i+1][n];
         if(ver[i] == 39){
@@ -55,16 +54,21 @@ void populaV(){
 
 // quando retorna 1 quer dizer que esta certo
 int main() {
-    //teste();
     populaV();
-    copia_vetor(0);
-    Converter_binario a;
-    a.recebe(ver,vetbin);
-    Monobit b;
-    cout<<"Monobittest: "<<b.teste(vetbin)<<endl;
-    LongTest t;
-    cout<<"Longtest: "<<t.longo(vetbin)<<endl;
-    PokerTest c;
-    cout<<"pokertest: "<<c.poker(vetbin)<<endl;
+
+    for (int i = 0; i < 20; i++) {
+        cout<<"teste para a linha: "<<i<<endl;
+        copia_vetor(i);
+        Converter_binario a;
+        a.recebe(ver, vetbin);
+        Monobit b;
+        cout << "Monobittest: " << b.teste(vetbin) << endl;
+        LongTest t;
+        cout << "Longtest: " << t.longo(vetbin) << endl;
+        PokerTest c;
+        cout << "pokertest: " << c.poker(vetbin) << endl;
+        RunTest d;
+        cout << "RunTest: " << d.run(vetbin) << endl;
+         }
     return 0;
 }

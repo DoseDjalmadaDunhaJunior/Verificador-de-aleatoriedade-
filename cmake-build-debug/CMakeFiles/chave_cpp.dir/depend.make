@@ -10,9 +10,13 @@ CMakeFiles/chave_cpp.dir/Monobit.cpp.o: ../Monobit.h
 CMakeFiles/chave_cpp.dir/PokerTest.cpp.o: ../PokerTest.cpp
 CMakeFiles/chave_cpp.dir/PokerTest.cpp.o: ../PokerTest.h
 
+CMakeFiles/chave_cpp.dir/RunTest.cpp.o: ../RunTest.cpp
+CMakeFiles/chave_cpp.dir/RunTest.cpp.o: ../RunTest.h
+
 CMakeFiles/chave_cpp.dir/main.cpp.o: ../Converter_binario.h
 CMakeFiles/chave_cpp.dir/main.cpp.o: ../LongTest.h
 CMakeFiles/chave_cpp.dir/main.cpp.o: ../Monobit.h
 CMakeFiles/chave_cpp.dir/main.cpp.o: ../PokerTest.h
+CMakeFiles/chave_cpp.dir/main.cpp.o: ../RunTest.h
 CMakeFiles/chave_cpp.dir/main.cpp.o: ../main.cpp
 
