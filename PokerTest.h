@@ -17,13 +17,20 @@ class PokerTest {
 public:
     int poker(int* vetor){
        copia(vetor);
-       int c = 0;
+       int c = 0,cc = 0;
         for (int i = 0; i < 5000; i+=4) {
             populaAnao(i);
             contaUm(c);
             c++;
         }
-        return contaRepeticao();
+        cc =  contaRepeticao();
+        double resp = formula(cc);
+        if((resp > 1.03) && (resp < 57.4)){
+            return 1;
+        }
+        else{
+            return 0;
+        }
     }
 
 private:
@@ -62,13 +69,14 @@ private:
                 if(contUm[i] == contUm[j]){
                     c++;
                 }
-                if(c > 15){
-                    return 0;
-                }
             }
-            c = 0;
         }
-        return 1;
+        return c;
+    }
+
+    //aqui é o calculo da formula
+    double formula(int valor){
+        return ((16/5000)*(valor*valor)-5000);
     }
 
     int contUm[5000];

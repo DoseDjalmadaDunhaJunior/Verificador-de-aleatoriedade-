@@ -63,28 +63,28 @@ int main() {
         a.recebe(ver, vetbin);
         Monobit b;
         if (b.teste(vetbin) == 1) {
-            cout << "Monobittest: aprovado" << endl;
+            cout << "MonobitTest: Aprovado" << endl;
         } else {
-            cout << "Monobittest: reprovado" << endl;
+            cout << "MonobitTest: Reprovado" << endl;
         }
         LongTest t;
         if (t.longo(vetbin) == 1) {
-            cout << "Longtest: aprovado" << endl;
+            cout << "LongTest: Aprovado" << endl;
         } else {
-            cout << "Longtest: reprovado" << endl;
+            cout << "LongTest: Reprovado" << endl;
 
         }
         PokerTest c;
         if (c.poker(vetbin) == 1) {
-            cout << "pokertest: aprovado" << endl;
+            cout << "PokerTest: Aprovado" << endl;
         } else {
-            cout << "pokertest: reprovado" << endl;
+            cout << "PokerTest: Reprovado" << endl;
         }
         RunTest d;
         if (d.run(vetbin) == 1) {
-            cout << "RunTest: aprovado" << endl;
+            cout << "RunTest: Aprovado" << endl;
         } else {
-            cout << "RunTest: reprovado" << endl;
+            cout << "RunTest: Reprovado" << endl;
         }
 puts("");
     }
